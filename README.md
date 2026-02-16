@@ -21,7 +21,7 @@ And so there you have it. The purpose of this program, i guess.
 ### Why This Manual?
 And by that I mean, why put the manual *here* instead of *in* the program itself?
 
-The answer is simple: Readability.
+Because readability.
 
 There used to be a `manual` command in the CLI showing how to use the program, and a `help` command giving you a quick reference to the commands. However, they were a bit hard to read.
 
@@ -45,9 +45,7 @@ Press enter to continue or type "quit" to return to the CLI.
 
 It *is* rather readable, but I felt that it would be better to put the manual in a `.md` file, as these types of files present their text like a Wikipedia article.
 
-So here you have it.
-
-`manual.md`.
+So yeah.
 
 ## Chapter 2: Downloading
 
@@ -62,12 +60,13 @@ To download the program:
 5. If you see a window asking you where to put the extracted folder, just ignore it and click "Extract". 
 6. The ZIP file will turn into a folder which will automatically open in another window. In it will be another folder called `monopoly_EBank-main`. Double-click the folder.
 7. In the folder should be five files: `LICENSE.md`, `README.md`, `manual.md`, `Monopoly-EBank.py` and `pdata.json`. Double-click `Monopoly-EBank.py`.
-8. If it appears in a terminal window and you see the following text:
+8. Right click it and select "Open with..." and select any terminal program, like PowerShell or something. If you see this in the terminal:
 ```
-(insert prompt here)
+Monopoly E-Bank v1.0, a Python program by plz4x
+Type "help" to get a quick command reference, or "manual" for how to use this program.
+>>>
 ```
 then you are good to go! You can start using the program.
-9. But if it opens in a coding app, like VS Code or IDLE, click the "Run" button in the app. Then you can start using the program!
 
 # Part II: Commands
 
@@ -78,8 +77,6 @@ If you already know the commands, and you only need a quick reference, refer to 
 *Insert quick reference here*
 
 ## Chapter 4: Commands for Managing Money
-
-
 
 ## Version history
 
