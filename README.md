@@ -16,7 +16,7 @@ It's also such a pain to count the money manually and give change and you know, 
 
 So I've created this program as a solution to these problems. Sure, other people obviously **have** created these sorts of programs before, but well I love programming and I want to try to make one myself.
 
-And so there you have it. The purpose of this program, i guess.
+And err idk, i hope you enjoy ig.
 
 ### Why This Manual?
 And by that I mean, why put the manual *here* instead of *in* the program itself?
