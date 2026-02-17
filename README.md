@@ -45,7 +45,7 @@ Press enter to continue or type "quit" to return to the CLI.
 
 It *is* rather readable, but I felt that it would be better to put the manual in a `.md` file, as these types of files present their text like a Wikipedia article.
 
-So yeah.
+So, errrrrrrrrrrrrr...     yeah.
 
 ## Chapter 2: Downloading
 
