@@ -16,7 +16,7 @@ Written by qpx5997
   * [Chapter 4: Commands for Managing Money](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-4-commands-for-managing-money)
     * [`reset`](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#reset)
     * [`add`](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#add)
-  * [Chapter 5: Version History](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-5-version-history))
+  * [Chapter 5: Version History](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-5-version-history)
 
 # Part I: Introductory Chapters
 
