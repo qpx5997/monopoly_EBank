@@ -1,5 +1,5 @@
 # Monopoly EBank Manual
-Written by plz4x
+Written by qpx5997
 
 ### (UNFINISHED, USE THE `manual` COMMAND FOR A GUIDE TO HOW TO USE THE PROGRAM)
 
@@ -62,7 +62,7 @@ To download the program:
 7. In the folder should be five files: `LICENSE.md`, `README.md`, `manual.md`, `Monopoly-EBank.py` and `pdata.json`. Double-click `Monopoly-EBank.py`.
 8. Right click it and select "Open with..." and select any terminal program, like PowerShell or something. If you see this in the terminal:
 ```
-Monopoly E-Bank v1.0, a Python program by plz4x
+Monopoly E-Bank v1.0, a Python program by qpx5997
 Type "help" to get a quick command reference, or "manual" for how to use this program.
 >>>
 ```
