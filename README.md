@@ -88,4 +88,6 @@ v1.2 (31/10/2025): Did a bugfix.
 
 v1.3 (07/11/2025): Added ltax and itax commands and did a bugfix. <-- CURRENT VERSION
 
+v1.4 (17/02/2026): A minor edit where I changed the header to my new username. Forgot to update the version history command print in the program itself tho :\
+
 v2.0 (FUTURE): Add property management.
