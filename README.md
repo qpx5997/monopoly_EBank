@@ -3,6 +3,21 @@ Written by qpx5997
 
 ### (UNFINISHED, USE THE `manual` COMMAND FOR A GUIDE TO HOW TO USE THE PROGRAM)
 
+## Table of Contents
+
+* [Part I: Introductory Chapters](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#part-i-introductory-chapters)
+  * [Chapter 1: Introduction](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-1-introduction)
+    * [About The Program](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#about-the-program)
+    * [Why This Program?](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#why-this-program)
+    * [Why This Manual?](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#why-this-manual)
+  * [Chapter 2: Downloading](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-2-downloading)
+* [Part II: Commands](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#part-ii-commands)
+  * [Chapter 3: Quick Reference](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-3-quick-reference)
+  * [Chapter 4: Commands for Managing Money](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-4-commands-for-managing-money)
+    * [`reset`](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#reset)
+    * [`add`](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#add)
+  * [Chapter 5: Version History](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-5-version-history))
+
 # Part I: Introductory Chapters
 
 ## Chapter 1: Introduction
@@ -45,7 +60,7 @@ Press enter to continue or type "quit" to return to the CLI.
 
 It *is* rather readable, but I felt that it would be better to put the manual in a `.md` file, as these types of files present their text like a Wikipedia article.
 
-So, errrrrrrrrrrrrr...     yeah.
+So, yeah, here is the manual, existing today.
 
 ## Chapter 2: Downloading
 
@@ -98,7 +113,7 @@ add p1 100
 ```
 Adds M100 to p1.
 
-## Version history
+## Chapter 5: Version history
 
 v1.0 (26/10/2025): Initial release, can only handle money.
 
