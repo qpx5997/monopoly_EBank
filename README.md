@@ -51,7 +51,7 @@ So, errrrrrrrrrrrrr...     yeah.
 
 You may skip this chapter if you have already downloaded the program.
 
-To download the program:
+To download the program: (This assumes you're on Windows, for macOS, I'm not so sure but the steps should be similar)
 
 1. Go to https://github.com/plz4x/monopoly_EBank.
 2. Click the green "<> Code" button.
