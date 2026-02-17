@@ -1,4 +1,4 @@
-print("""Monopoly E-Bank v1.0, a Python program by plz4x
+print("""Monopoly E-Bank v1.0, a Python program by qpx5997
 Type "help" to get a quick command reference, or "manual" for how to use this program.""")
 
 money = {
@@ -174,3 +174,4 @@ exit: Quits the program.""")
 
 	except IndexError:
 		print(f"ERROR: Only {len(cmd_split)} argument(s) were given for command {cmd}")
+
