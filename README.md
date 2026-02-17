@@ -68,6 +68,8 @@ Type "help" to get a quick command reference, or "manual" for how to use this pr
 ```
 then you are good to go! You can start using the program.
 
+**Note:** When you start the program, it will start with the default players: p1, p2, p3 and p4, all with M1500. You can change the player names with the `ren` command. More on that later.
+
 # Part II: Commands
 
 ## Chapter 3: Quick Reference
@@ -78,6 +80,24 @@ If you already know the commands, and you only need a quick reference, refer to 
 
 ## Chapter 4: Commands for Managing Money
 
+### `reset`
+**What it does:** Resets all the players and money.
+
+#### Example usage
+```
+reset
+```
+Resets all the players and money. (Obviously. It's literally stated above.)
+
+### `add`
+**What it does:** Adds money to the stated player from the bank.
+
+#### Example Usage
+```
+add p1 100
+```
+Adds M100 to p1.
+
 ## Version history
 
 v1.0 (26/10/2025): Initial release, can only handle money.
@@ -86,8 +106,10 @@ v1.1 (29/10/2025): Added player renaming and fixed a minor spelling error. Also 
 
 v1.2 (31/10/2025): Did a bugfix.
 
-v1.3 (07/11/2025): Added ltax and itax commands and did a bugfix. <-- CURRENT VERSION
+v1.3 (07/11/2025): Added ltax and itax commands and did a bugfix.
 
 v1.4 (17/02/2026): A minor edit where I changed the header to my new username. Forgot to update the version history command print in the program itself tho :\
+
+v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands. <-- CURRENT VERSION
 
 v2.0 (FUTURE): Add property management.
