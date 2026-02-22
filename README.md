@@ -5,18 +5,18 @@ Written by qpx5997
 
 ## Table of Contents
 
-* [Part I: Introductory Chapters](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#part-i-introductory-chapters)
-  * [Chapter 1: Introduction](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-1-introduction)
-    * [About The Program](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#about-the-program)
-    * [Why This Program?](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#why-this-program)
-    * [Why This Manual?](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#why-this-manual)
-  * [Chapter 2: Downloading](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-2-downloading)
-* [Part II: Commands](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#part-ii-commands)
-  * [Chapter 3: Quick Reference](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-3-quick-reference)
-  * [Chapter 4: Commands for Managing Money](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-4-commands-for-managing-money)
-    * [`reset`](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#reset)
-    * [`add`](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#add)
-  * [Chapter 5: Version History](https://github.com/qpx5997/monopoly_EBank/tree/main?tab=readme-ov-file#chapter-5-version-history)
+* [Part I: Introductory Chapters](#part-i-introductory-chapters)
+  * [Chapter 1: Introduction](#chapter-1-introduction)
+    * [About The Program](#about-the-program)
+    * [Why This Program?](#why-this-program)
+    * [Why This Manual?](#why-this-manual)
+  * [Chapter 2: Downloading](#chapter-2-downloading)
+* [Part II: Commands](#part-ii-commands)
+  * [Chapter 3: Quick Reference](#chapter-3-quick-reference)
+  * [Chapter 4: Commands for Managing Money](#chapter-4-commands-for-managing-money)
+    * [`reset`](#reset)
+    * [`add`](#add)
+  * [Chapter 5: Version History](#chapter-5-version-history)
 
 # Part I: Introductory Chapters
 
@@ -74,7 +74,7 @@ To download the program: (This assumes you're on Windows, for macOS, I'm not so 
 4. In your file explorer, right click on the ZIP file called `monopoly_EBank-main.zip` (it will most likely be in the "Downloads" folder) and click "Extract All".
 5. If you see a window asking you where to put the extracted folder, just ignore it and click "Extract". 
 6. The ZIP file will turn into a folder which will automatically open in another window. In it will be another folder called `monopoly_EBank-main`. Double-click the folder.
-7. In the folder should be five files: `LICENSE.md`, `README.md`, `manual.md`, `Monopoly-EBank.py` and `pdata.json`. Double-click `Monopoly-EBank.py`.
+7. In the folder should be four files: `LICENSE.md`, `README.md`, `manual.md` and `Monopoly-EBank.py`. Double-click `Monopoly-EBank.py`.
 8. Right click it and select "Open with..." and select any terminal program, like PowerShell or something. If you see this in the terminal:
 ```
 Monopoly E-Bank v1.0, a Python program by qpx5997
