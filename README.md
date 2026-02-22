@@ -125,6 +125,8 @@ v1.3 (07/11/2025): Added ltax and itax commands and did a bugfix.
 
 v1.4 (17/02/2026): A minor edit where I changed the header to my new username. Forgot to update the version history command print in the program itself tho :\
 
-v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands. <-- CURRENT VERSION
+v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands.
+
+v1.6 (22/02/2026): Did a bugfix involving unescaped quotes. <-- CURRENT VERSION
 
 v2.0 (FUTURE): Add property management.
