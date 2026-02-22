@@ -94,7 +94,8 @@ v1.1 (29/10/2025): Added player renaming and fixed a minor spelling error. Also 
 v1.2 (31/10/2025): Did a bugfix.
 v1.3 (07/11/2025): Added ltax and itax commands and did a bugfix.
 v1.4 (17/02/2026): A minor edit where I changed the header to my new username. Forgot to update the version history command print in the program itself tho :\
-v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands. <-- CURRENT VERSION
+v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands.
+v1.6 (22/02/2026): Did a bugfix involving unescaped quotes. <-- CURRENT VERSION
 v2.0 (FUTURE): Add property management.""")
         continue
         
@@ -173,11 +174,11 @@ exit: Quits the program.""")
                 money[cmd_split[1]] = int(cmd_split[2])
             elif len(cmd_split) <= 2:
                 money[cmd_split[1]]  = 1500
-            print(f"Player "{cmd_split[1]}" added with M{money[cmd_split[1]]}.")
+            print(f"Player \"{cmd_split[1]}\" added with M{money[cmd_split[1]]}.")
 
         elif cmd_split[0] == "delp":
             money.pop(cmd_split[1])
-            print(f"Player "{cmd_split[1]}" deleted.")
+            print(f"Player \"{cmd_split[1]}\" deleted.")
 
         else:
             print(f"ERROR: Unknown command \"{cmd_split[0]}\"")
@@ -196,5 +197,3 @@ exit: Quits the program.""")
 
     except IndexError:
         print(f"ERROR: Only {len(cmd_split)} argument(s) were given for command {cmd}")
-
-
