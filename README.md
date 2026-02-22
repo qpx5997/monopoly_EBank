@@ -74,7 +74,7 @@ To download the program: (This assumes you're on Windows, for macOS, I'm not so 
 4. In your file explorer, right click on the ZIP file called `monopoly_EBank-main.zip` (it will most likely be in the "Downloads" folder) and click "Extract All".
 5. If you see a window asking you where to put the extracted folder, just ignore it and click "Extract". 
 6. The ZIP file will turn into a folder which will automatically open in another window. In it will be another folder called `monopoly_EBank-main`. Double-click the folder.
-7. In the folder should be four files: `LICENSE.md`, `README.md`, `manual.md` and `Monopoly-EBank.py`. Double-click `Monopoly-EBank.py`.
+7. In the folder should be four files: `LICENSE.md`, `README.md` and `Monopoly-EBank.py`. Double-click `Monopoly-EBank.py`.
 8. Right click it and select "Open with..." and select any terminal program, like PowerShell or something. If you see this in the terminal:
 ```
 Monopoly E-Bank v1.0, a Python program by qpx5997
