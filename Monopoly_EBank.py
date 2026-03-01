@@ -1,4 +1,4 @@
-print("""Monopoly E-Bank v1.0, a Python program by qpx5997
+print("""Monopoly E-Bank v1.7, a Python program by qpx5997
 Type "help" to get a quick command reference, or "manual" for how to use this program.""")
 
 money = {
@@ -42,7 +42,7 @@ EXAMPLE: set p1 300 -- Sets p1's amount to M300.""",
 EXAMPLE: trans p2 p4 10 -- Transfers M10 from p2 to p4.
 vm: Short for View Money; lets you see the stated player's the amount of money.
 EXAMPLE: vm p1 -- Shows the amount of money p1 has.
-EXAMPLE: vm all -- Shows the amount of money everyone has.
+EXAMPLE: vm ==all -- Shows the amount of money everyone has.
 itax: Short for Income Tax; subtracts M200 from the stated player.
 EXAMPLE: itax p1 -- Subtracts M200 from p1.
 ltax: Short for Luxury Tax; subtracts M100 from the stated player.
@@ -95,7 +95,8 @@ v1.2 (31/10/2025): Did a bugfix.
 v1.3 (07/11/2025): Added ltax and itax commands and did a bugfix.
 v1.4 (17/02/2026): A minor edit where I changed the header to my new username. Forgot to update the version history command print in the program itself tho :\
 v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands.
-v1.6 (22/02/2026): Did a bugfix involving unescaped quotes. <-- CURRENT VERSION
+v1.6 (22/02/2026): Did a bugfix involving unescaped quotes.
+v1.7 (01/03/2026): Reserved special keywords and added the status command and comments. <-- CURRENT VERSION
 v2.0 (FUTURE): Add property management.""")
         continue
         
@@ -108,7 +109,7 @@ go p1: Gives M200 to p1.
 set p1 2000: Sets p1's money to M2000.
 trans p1 p2 10: Transfers M10 from p1 to p2.
 vm p1: Shows p1's money.
-vm all: Shows every player's money.
+vm ==all: Shows every player's money.
 ren p1 someone: Renames p1 to someone.
 exit: Quits the program.""")
         continue
@@ -144,7 +145,7 @@ exit: Quits the program.""")
             print(f"""{cmd_split[1]}'s money set to M{cmd_split[2]}.""")
     
         elif cmd_split[0] == "vm":
-            if cmd_split[1] == "all":
+            if cmd_split[1] == "==all":
                 print(f"""ALL PLAYER CURRENT TOTAL MONEY:
 
 {money}""")
@@ -152,6 +153,9 @@ exit: Quits the program.""")
                 print(f"""{cmd_split[1]}'s current total money: M{money[cmd_split[1]]}""")
                 
         elif cmd_split[0] == "ren": # The if-clauses exist because if it ran like normal and someone typed only 2 arguments the program would end up deleting the player
+            if cmd_split[2].startswith("=="):
+                print("ERROR: Cannot rename a player name to a special keyword")
+                continue
             if len(cmd_split) < 3:
                 print(f"ERROR: Only {len(cmd_split)} argument(s) were given for command {cmd}")
             else:
@@ -179,6 +183,85 @@ exit: Quits the program.""")
         elif cmd_split[0] == "delp":
             money.pop(cmd_split[1])
             print(f"Player \"{cmd_split[1]}\" deleted.")
+
+        elif cmd_split[0] == "status":
+            if cmd_split[1] == "==all":
+                for player in money:
+                    if money[player] < 0:
+                        status = "Bankrupt (why are you still here???)"
+                    elif money[player] == 0:
+                        status = "Penniless, literally"
+                    elif money[player] <= 30:
+                        status = "Generally broke"
+                    elif money[player] <= 100:
+                        status = "Destitute"
+                    elif money[player] <= 350:
+                        status = "Impoverished"
+                    elif money[player] <= 500:
+                        status = "Poor"
+                    elif money[player] <= 800:
+                        status = "Lower Middle Class"
+                    elif money[player] <= 1000:
+                        status = "Upper Middle Class"
+                    elif money[player] <= 1300:
+                        status = "Affluent"
+                    elif money[player] <= 1600:
+                        status = "Upper Affluent"
+                    elif money[player] <= 1900:
+                        status = "Rich"
+                    elif money[player] <= 2500:
+                        status = "Really Rich"
+                    elif money[player] <= 1000000:
+                        status = "Filthy Rich"
+                    elif money[player] <= 1000000000:
+                        status = "Millionaire"
+                    elif money[player] <= 1000000000000:
+                        status = "Billionaire"
+                    else:
+                        status = "Cheater"
+
+                    print(f"{player}'s status: {status}")
+
+            else:
+                if money[cmd_split[1]] < 0:
+                    status = "Bankrupt (why are you still here???)"
+                    # i know this giant if clause isnt too good but im just not too good at programming ok??
+                    # REMINDER TO SELF: when changing one, make sure to apply it to the other giant if-building too
+                elif money[cmd_split[1]] == 0:
+                    status = "Penniless, literally"
+                elif money[cmd_split[1]] <= 30:
+                    status = "Generally broke"
+                elif money[cmd_split[1]] <= 100:
+                    status = "Destitute"
+                elif money[cmd_split[1]] <= 350:
+                    status = "Impoverished"
+                elif money[cmd_split[1]] <= 500:
+                    status = "Poor"
+                elif money[cmd_split[1]] <= 800:
+                    status = "Lower Middle Class"
+                elif money[cmd_split[1]] <= 1000:
+                    status = "Upper Middle Class"
+                elif money[cmd_split[1]] <= 1300:
+                    status = "Affluent"
+                elif money[cmd_split[1]] <= 1600:
+                    status = "Upper Affluent"
+                elif money[cmd_split[1]] <= 1900:
+                    status = "Rich"
+                elif money[cmd_split[1]] <= 2500:
+                    status = "Really Rich"
+                elif money[cmd_split[1]] <= 1000000:
+                    status = "Filthy Rich"
+                elif money[cmd_split[1]] <= 1000000000:
+                    status = "Millionaire"
+                elif money[cmd_split[1]] <= 1000000000000:
+                    status = "Billionaire"
+                else:
+                    status = "Cheater"
+
+                print(f"{cmd_split[1]}'s status: {status}")
+
+        elif cmd_split[0] == "#:":
+            pass # comments
 
         else:
             print(f"ERROR: Unknown command \"{cmd_split[0]}\"")
