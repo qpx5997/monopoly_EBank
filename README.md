@@ -127,6 +127,8 @@ v1.4 (17/02/2026): A minor edit where I changed the header to my new username. F
 
 v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added a new chapter to the manual and added delp and addp commands.
 
-v1.6 (22/02/2026): Did a bugfix involving unescaped quotes. <-- CURRENT VERSION
+v1.6 (22/02/2026): Did a bugfix involving unescaped quotes.
+
+v1.7 (01/03/2026): Reserved special keywords and added the status command and comments. <-- CURRENT VERSION
 
 v2.0 (FUTURE): Add property management.
