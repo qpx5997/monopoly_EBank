@@ -24,7 +24,18 @@ Written by qpx5997
     * [`ltax`](#ltax)
     * [`vm`](#vm)
     * [`status`](#status)
-  * [Chapter 5: Version History](#chapter-5-version-history)
+  * [Chapter 5: Player Management Commands](#chapter-5-player-management-commands)
+    * [`ren`](#ren)
+    * [`addp`](#addp)
+    * [`delp`](#delp)
+  * [Chapter 6: Other Miscellaneous Commands](#chapter-6-other-miscellaneous-commands)
+    * [`reset`](#reset)
+    * [`help`](#help)
+    * [`manual`](#manual)
+    * [`changelog`](#changelog)
+    * [`exit`](#exit)
+  * [Chapter 7: Physical Management](#chapter-7-physical-management)
+  * [Chapter 8: Version History](#chapter-8-version-history)
 
 # Part I: Introductory Chapters
 
@@ -102,15 +113,6 @@ If you already know the commands, and you only need a quick reference, refer to 
 *Insert quick reference here*
 
 ## Chapter 4: Money Management Commands
-
-### `reset`
-**What it does:** Resets all the players and money.
-
-#### Example usage
-```
-reset
-```
-Resets all the players and money. (Obviously. It's literally stated above.)
 
 ### `add`
 **What it does:** Adds money to the specified player from the bank.
@@ -250,9 +252,37 @@ delp p1
 Deletes player `p1`.
 
 ## Chapter 6: Other Miscellaneous Commands
-tba
 
-## Chapter 7: Version history
+**The following commands all require only one argument. That is, for the reset command, just type `reset` and it will run.**
+
+### `reset`
+**What it does:** Resets all the players and money.
+
+### `help`
+**What it does:** Shows a quick overview of some commands.
+
+### `manual`
+**NOTE:** This command will be depracated from v1.8 onwards. In versions of v1.7 and before, it shows a guide to the CLI, but from v1.8 onwards, it just displays a message to see the README for a guide.
+
+### `changelog`
+**What it does:** Shows the changelog.
+
+### `exit`
+**What it does:** Stops the program.
+
+## Chapter 7: Physical Management
+
+The following things still need to be managed physically on the board:
+* properties;
+* houses and hotels;
+* board tokens;
+* dice rolls;
+* chance cards and community chest cards (though money effects can be managed in the CLI);
+* jail and get out of jail free cards;
+* mortgages;
+* trading of items between players (though payments can be managed in the CLI)
+
+## Chapter 8: Version history
 
 v1.0 (26/10/2025): Initial release, can only handle money.
 
