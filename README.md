@@ -13,7 +13,7 @@ Written by qpx5997
   * [Chapter 2: Downloading](#chapter-2-downloading)
 * [Part II: Commands](#part-ii-commands)
   * [Chapter 3: Quick Reference](#chapter-3-quick-reference)
-  * [Chapter 4: Commands for Managing Money](#chapter-4-commands-for-managing-money)
+  * [Chapter 4: Money Management Commands](#chapter-4-money-management-commands)
     * [`reset`](#reset)
     * [`add`](#add)
   * [Chapter 5: Version History](#chapter-5-version-history)
@@ -93,7 +93,7 @@ If you already know the commands, and you only need a quick reference, refer to 
 
 *Insert quick reference here*
 
-## Chapter 4: Commands for Managing Money
+## Chapter 4: Money Management Commands
 
 ### `reset`
 **What it does:** Resets all the players and money.
@@ -199,6 +199,36 @@ Shows all players' statuses.
 #### Ok but why does this even exist???
 
 I thought it would be a funny addition. :)
+
+## Chapter 5: Player Management Commands
+
+### `ren`
+**What it does:** Renames the specified player.
+
+#### Example usage
+
+```
+ren p1 p5
+```
+Renames p1 to p5.
+
+**NOTE 1:** Renaming a player to a name which has `==` in front of it (e.g. `ren p1 ==all`) will result in an error. Words with `==` in front of them are called **special keywords**, and they are reserved for special uses (e.g. `vm ==all`).
+**NOTE 2:** Entering `ren p1 p5` and then `add p1 100` will result in an error as p1 has been renamed. Entering `add p5 100` instead will work.
+
+### `addp`
+**What it does:** Adds a player.
+
+#### Example usage
+
+```
+addp p5 400
+```
+Adds player `p5` with M400.
+
+```
+addp p6
+```
+Adds player `p6` with M1500.
 
 ## Chapter 5: Version history
 
