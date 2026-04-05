@@ -66,7 +66,7 @@ So, yeah, here is the manual, existing today.
 
 You may skip this chapter if you have already downloaded the program.
 
-To download the program: (This assumes you're on Windows, for macOS, I'm not so sure but the steps should be similar)
+To download the program: (This assumes you're on Windows; for macOS, I'm not so sure but the steps should be similar)
 
 1. Go to https://github.com/plz4x/monopoly_EBank.
 2. Click the green "<> Code" button.
@@ -105,13 +105,100 @@ reset
 Resets all the players and money. (Obviously. It's literally stated above.)
 
 ### `add`
-**What it does:** Adds money to the stated player from the bank.
+**What it does:** Adds money to the specified player from the bank.
 
 #### Example Usage
 ```
 add p1 100
 ```
 Adds M100 to p1.
+
+### `subt`
+**What it does:** Subtracts money to the specified player. That money goes to the bank.
+
+#### Example Usage
+```
+subt p1 100
+```
+Subtracts M100 from p1.
+
+### `trans`
+**What it does:** Transfers money from one player to another.
+
+#### Example Usage
+```
+trans p1 p2 100
+```
+Transfers M100 from p1 to p2.
+
+### `go`
+**What it does:** Adds M200 to the specified player. This is a shortcut to `add (PLAYER) 200`.
+
+#### Example usage
+```
+go p1
+```
+Adds M200 to p1.
+
+### `set`
+**What it does:** Sets the specified player's money to the specified amount.
+
+#### Example usage
+```
+set p1 1500
+```
+Sets p1's money to M1500.
+
+### `itax`
+**What it does:** Subtracts M200 from the specified player. This is a shortcut to `subt (PLAYER) 200`.
+
+#### Example usage
+```
+itax p1
+```
+Subtracts M200 from p1.
+
+### `ltax`
+**What it does:** Subtracts M100 from the specified player. This is a shortcut to `subt (PLAYER) 100`.
+
+#### Example usage
+```
+ltax p1
+```
+Subtracts M100 from p1.
+
+### `vm`
+**What it does:** Shows the specified player's balance (amount of money they have).
+
+#### Example usage
+```
+vm p1
+```
+Shows p1's balance.
+
+```
+vm ==all
+```
+Shows all players' balance.
+
+### `status`
+**What it does:** Shows the specified player's status. A status is a word to describe how much money they have (e.g. Impoverished, Affluent).
+
+#### Example usage
+
+```
+status p1
+```
+Shows p1's status.
+
+```
+status ==all
+```
+Shows all players' statuses.
+
+#### Ok but why does this even exist???
+
+I thought it would be a funny addition. :)
 
 ## Chapter 5: Version history
 
