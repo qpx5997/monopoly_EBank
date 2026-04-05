@@ -1,7 +1,7 @@
 # Monopoly EBank Manual
 Written by qpx5997
 
-### (UNFINISHED, USE THE `manual` COMMAND FOR A GUIDE TO HOW TO USE THE PROGRAM)
+### The quick reference is unfinished
 
 ## Table of Contents
 
