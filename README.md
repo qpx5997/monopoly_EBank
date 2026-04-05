@@ -16,6 +16,14 @@ Written by qpx5997
   * [Chapter 4: Money Management Commands](#chapter-4-money-management-commands)
     * [`reset`](#reset)
     * [`add`](#add)
+    * [`subt`](#subt)
+    * [`trans`](#trans)
+    * [`go`](#go)
+    * [`set`](#set)
+    * [`itax`](#itax)
+    * [`ltax`](#ltax)
+    * [`vm`](#vm)
+    * [`status`](#status)
   * [Chapter 5: Version History](#chapter-5-version-history)
 
 # Part I: Introductory Chapters
@@ -230,7 +238,21 @@ addp p6
 ```
 Adds player `p6` with M1500.
 
-## Chapter 5: Version history
+### `delp`
+**What it does:** Deletes a player.
+
+#### Example usage
+
+```
+delp p1
+```
+
+Deletes player `p1`.
+
+## Chapter 6: Other Miscellaneous Commands
+tba
+
+## Chapter 7: Version history
 
 v1.0 (26/10/2025): Initial release, can only handle money.
 
