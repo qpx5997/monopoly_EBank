@@ -24,6 +24,8 @@ Written by qpx5997
     * [`ltax`](#ltax)
     * [`vm`](#vm)
     * [`status`](#status)
+    * [`mtransi`](#mtransi)
+    * [`mtranso`](#mtranso)
   * [Chapter 5: Player Management Commands](#chapter-5-player-management-commands)
     * [`ren`](#ren)
     * [`addp`](#addp)
@@ -168,14 +170,17 @@ itax p1
 ```
 Subtracts M200 from p1.
 
-### `ltax`
+### `ltax` or `stax`
 **What it does:** Subtracts M100 from the specified player. This is a shortcut to `subt (PLAYER) 100`.
 
 #### Example usage
 ```
 ltax p1
 ```
-Subtracts M100 from p1.
+```
+stax p1
+```
+Both of these subtracts M100 from p1.
 
 ### `vm`
 **What it does:** Shows the specified player's balance (amount of money they have).
@@ -209,6 +214,26 @@ Shows all players' statuses.
 #### Ok but why does this even exist???
 
 I thought it would be a funny addition. :)
+
+### `mtransi`
+**What it does:** Short for **m**ulti **trans**fer **i**ncoming. Transfers the specified amount from every player to the specified player.
+
+#### Example usage
+
+```
+mtransi p1 10
+```
+Transfers M10 from every player to p1. If there are 3 people in the game (excluding p1), p1 will receive a total of M30.
+
+### `mtranso`
+**What it does:** Short for **m**ulti **trans**fer **o**utgoing. Transfers the specified amount from the specified player to every player.
+
+#### Example usage
+
+```
+mtranso p1 50
+```
+Transfers M50 from p1 to every player. If there are 3 people in the game (excluding p1), p1 will transfer a total of M150.
 
 ## Chapter 5: Player Management Commands
 
@@ -256,19 +281,19 @@ Deletes player `p1`.
 **The following commands all require only one argument. That is, for the reset command, just type `reset` and it will run.**
 
 ### `reset`
-**What it does:** Resets all the players and money.
+**What it does:** Displays a confirmation message. If confirmed, it resets all the players and money.
 
 ### `help`
 **What it does:** Shows a quick overview of some commands.
 
 ### `manual`
-**NOTE:** This command will be depracated from v1.8 onwards. In versions of v1.7 and before, it shows a guide to the CLI, but from v1.8 onwards, it just displays a message to see the README for a guide.
+**NOTE:** This command has been from v1.8 onwards. In versions of v1.7 and before, it shows a guide to the CLI, but from v1.8 onwards, it just displays a message to see the README for a guide.
 
 ### `changelog`
 **What it does:** Shows the changelog.
 
 ### `exit`
-**What it does:** Stops the program.
+**What it does:** Displays a confirmation message. If confirmed, it stops the program.
 
 ## Chapter 7: Physical Management
 
@@ -298,6 +323,8 @@ v1.5 (17/02/2026): Changed tabs in the source code to spaces, fixed a bug, added
 
 v1.6 (22/02/2026): Did a bugfix involving unescaped quotes.
 
-v1.7 (01/03/2026): Reserved special keywords and added the status command and comments. <-- CURRENT VERSION
+v1.7 (01/03/2026): Reserved special keywords and added the status command and comments.
+
+v1.8 (05/04/2026): Did bugfixes and added mtransi and mtranso commands, confirmation messages and stax alternative command. <-- CURRENT VERSION
 
 v2.0 (FUTURE): Add property management.
