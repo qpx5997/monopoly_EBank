@@ -1,4 +1,4 @@
-print("""Monopoly E-Bank v1.8, a Python program by qpx5997
+print("""Monopoly E-Bank v1.9, a Python program by qpx5997
 Type "help" to get a quick command reference, or "manual" for how to use this program.""")
 
 money = {
