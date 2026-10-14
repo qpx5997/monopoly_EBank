@@ -325,6 +325,8 @@ v1.6 (22/02/2026): Did a bugfix involving unescaped quotes.
 
 v1.7 (01/03/2026): Reserved special keywords and added the status command and comments.
 
-v1.8 (05/04/2026): Did bugfixes and added mtransi and mtranso commands, confirmation messages and stax alternative command. <-- CURRENT VERSION
+v1.8 (05/04/2026): Did bugfixes and added mtransi and mtranso commands, confirmation messages and stax alternative command.
+
+v1.9 (14/10/2026): Updated some status names in the status command. <-- CURRENT VERSION
 
 v2.0 (FUTURE): Add property management.
