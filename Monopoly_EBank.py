@@ -185,11 +185,11 @@ Enter vm ==all for all players' current balance.""")
                         status = "Rich"
                     elif money[player] <= 2500:
                         status = "Really Rich"
-                    elif money[player] <= 1000000:
+                    elif money[player] <= 10000:
                         status = "Filthy Rich"
-                    elif money[player] <= 1000000000:
+                    elif money[player] <= 1000000:
                         status = "Millionaire"
-                    elif money[player] <= 1000000000000:
+                    elif money[player] <= 1000000000:
                         status = "Billionaire"
                     else:
                         status = "Cheater"
@@ -223,11 +223,11 @@ Enter vm ==all for all players' current balance.""")
                     status = "Rich"
                 elif money[cmd_split[1]] <= 2500:
                     status = "Really Rich"
-                elif money[cmd_split[1]] <= 1000000:
+                elif money[cmd_split[1]] <= 10000:
                     status = "Filthy Rich"
-                elif money[cmd_split[1]] <= 1000000000:
+                elif money[cmd_split[1]] <= 1000000:
                     status = "Millionaire"
-                elif money[cmd_split[1]] <= 1000000000000:
+                elif money[cmd_split[1]] <= 1000000000:
                     status = "Billionaire"
                 else:
                     status = "Cheater"
